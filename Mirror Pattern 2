@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+  int n, c, row, t = 0;
+
+  scanf("%d", &n);
+
+  for (row = 0; row <= n; row++) {
+    for (c = 0; c <= n - row; c++)
+      printf("  ");
+
+    t = row;
+
+    for (c = 0; c <= row; c++) {
+      printf("%d ", t);
+      t--;
+    }
+
+    t = t;
+
+    for (c = 0 ; c < row; c++) {
+        
+      printf("%d ", t-t-t);
+      t--;
+    }
+
+    printf("\n");
+  }
+
+  return 0;
+}
